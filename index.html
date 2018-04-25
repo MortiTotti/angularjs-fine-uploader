@@ -1,0 +1,28 @@
+<html ng-app="app">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/fine-uploader/fine-uploader/fine-uploader.min.js"></script>
+
+  <link href="node_modules/fine-uploader/fine-uploader/fine-uploader-new.css" rel="stylesheet">
+
+  <script src="app.js"></script>
+  <script src="file-uploader.directive.js"></script>
+
+</head>
+
+<body ng-controller="home">
+  <angular-fine-uploader
+      upload-service-url='http://localhost:6595/api/Upload/UploadFile'
+      delete-file-service-url='http://localhost:6595/api/Upload/deletefile'
+      on-success-upload-callback=''
+      max-size-kb=1024
+      max-allowed-items=5
+      allowed-extensions='jpeg,jpg,gif,png,pdf,js' />
+</body>
+
+</html>

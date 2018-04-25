@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-fine-uploader",
+  "version": "1.0.0",
+  "description": "A simple angularjs directive based on Fine-Uploader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MortiTotti/angularjs-fine-uploader.git"
+  },
+  "author": "morteza taghdisi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MortiTotti/angularjs-fine-uploader.git/issues"
+  },
+  "homepage": "https://github.com/MortiTotti/angularjs-fine-uploader.git#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
