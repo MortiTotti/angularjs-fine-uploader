@@ -1,5 +1,5 @@
 ﻿angular
-  .module('app')
+  .module('angularFineUploader')
   .directive('angularFineUploader', ['$timeout', function ($timeout) {
 
     function generateUploader($scope) {

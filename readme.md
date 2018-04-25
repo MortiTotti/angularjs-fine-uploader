@@ -46,13 +46,13 @@ Sample server side code for C# :
     }
 
     [HttpDelete]
-    public void DeleteFile(Guid id)
+    public async Task DeleteFile(Guid id)
     {
-        registerAdrBusiness.DeleteAdrReportFileAsync(id);
+        await myBusiness.DeleteFileAsync(id);
     }
 ```
 
-and your custom multipart form data look like this:
+and your CustomMultipartFormDataStreamProvider class looks like this:
 ```
     public class CustomMultipartFormDataStreamProvider : MultipartFormDataStreamProvider
     {
